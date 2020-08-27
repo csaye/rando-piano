@@ -12,8 +12,9 @@ namespace RandoPiano
         [Header("References")]
         [SerializeField] private NotePlayer notePlayer = null;
         [SerializeField] private NoteRenderer noteRenderer = null;
+        [SerializeField] private PlayPauseButton playPauseButton = null;
 
-        public float noteSpeed {get; set;} = 0.5f;
+        public float noteSpeed {get; set;} = 1f;
 
         private void Start()
         {
@@ -28,14 +29,12 @@ namespace RandoPiano
             {
                 yield return new WaitForSeconds(noteSpeed);
 
-                note = -2;
+                if (!playPauseButton.playing)
+                {
+                    continue;
+                }
 
-                notePlayer.PlayNote(note);
-                noteRenderer.RenderNote(note);
-
-                yield return new WaitForSeconds(noteSpeed);
-
-                note = 5;
+                note = GetRandomNote();
 
                 notePlayer.PlayNote(note);
                 noteRenderer.RenderNote(note);

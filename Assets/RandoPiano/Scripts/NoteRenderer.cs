@@ -9,7 +9,7 @@ namespace RandoPiano
         [SerializeField] private Sprite downNote = null;
         [SerializeField] private GameObject[] noteObjects = new GameObject[32];
 
-        private int currentNote;
+        private int currentNote = 31;
 
         public void RenderNote(int note)
         {
