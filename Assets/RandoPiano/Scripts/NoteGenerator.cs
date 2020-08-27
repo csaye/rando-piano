@@ -22,16 +22,23 @@ namespace RandoPiano
 
         private IEnumerator GenerateNotes()
         {
+            int note;
+
             while (true)
             {
                 yield return new WaitForSeconds(noteSpeed);
 
-                int note = GetRandomNote();
+                note = -2;
 
                 notePlayer.PlayNote(note);
                 noteRenderer.RenderNote(note);
 
-                Debug.Log(note);
+                yield return new WaitForSeconds(noteSpeed);
+
+                note = 5;
+
+                notePlayer.PlayNote(note);
+                noteRenderer.RenderNote(note);
             }
         }
 

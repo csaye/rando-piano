@@ -323,8 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778a82338a88140f3b20ec42a5118666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minNote: -1
-  maxNote: 1
+  minNote: -5
+  maxNote: 5
   notePlayer: {fileID: 1618351154}
   noteRenderer: {fileID: 63318140}
 --- !u!1 &154422846
@@ -2330,18 +2330,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a228bb3f86c22419a98bf182a6a4d6ff, type: 3}
+  - {fileID: 8300000, guid: 6f48db1b8c3e9483fa63b4f90c578718, type: 3}
+  - {fileID: 8300000, guid: 97557c8973fe4401094b5a8aa38aeafa, type: 3}
+  - {fileID: 8300000, guid: b6a58ba1b96054511aa3255d5d6e3b91, type: 3}
+  - {fileID: 8300000, guid: fcf333524695541c7830c4d9cc67fe97, type: 3}
+  - {fileID: 8300000, guid: 0164d1f58a9dc465c8424062017d979b, type: 3}
+  - {fileID: 8300000, guid: 56543e40ead83433fa05876ec375ae7e, type: 3}
 --- !u!1 &1620552091
 GameObject:
   m_ObjectHideFlags: 0
