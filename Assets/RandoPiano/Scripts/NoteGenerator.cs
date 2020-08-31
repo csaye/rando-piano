@@ -26,13 +26,10 @@ namespace RandoPiano
             int note;
 
             while (true)
-            {
+            {   
                 yield return new WaitForSeconds(noteSpeed);
 
-                if (!playPauseButton.playing)
-                {
-                    continue;
-                }
+                if (!playPauseButton.playing) continue;
 
                 note = GetRandomNote();
 
